@@ -5,7 +5,7 @@
 }
 body {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background: #f4f1ea;
     color: #111111;
     font-family: 'Work Sans', sans-serif;
@@ -44,6 +44,8 @@ h1, h2, h3, .logo, .swatch {
 .site-header {
     display: flex;
     justify-content: space-between;
+    /* Content justification changed to center then flex-end,
+    changing header alignments to be more central and opposing than space-between.*/
     align-items: center;
     padding: 20px 32px;
     background: #111111;
@@ -87,6 +89,7 @@ h1, h2, h3, .logo, .swatch {
 .album {
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     gap: 24px;
     padding: 20px 0;
     border-top: 3px solid #111111;
@@ -131,6 +134,15 @@ h1, h2, h3, .logo, .swatch {
 }
 .person {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 28px;
+    background: #e6e0d4
+}
+.person-middle {
+    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
