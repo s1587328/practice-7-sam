@@ -116,3 +116,21 @@ h1, h2, h3, .logo, .swatch {
 .info {
     flex: 1;
 }
+.studio {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.studio img {
+    width: 100%;
+    height: auto;
+}
+.cards {
+    display: flex;
+    gap: 24px;
+}
+.person {
+    flex: 1;
+    padding: 28px;
+    background: #e6e0d4
+}
